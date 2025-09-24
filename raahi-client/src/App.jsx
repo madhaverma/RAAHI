@@ -6,7 +6,7 @@ import Footer from './components/footer'
 import Contact from './components/Contact'
 import AboutUsPage from './components/About'
 
-// Make sure you've installed react-router-dom: npm install react-router-dom
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
