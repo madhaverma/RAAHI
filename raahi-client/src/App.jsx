@@ -1,27 +1,28 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import Login from './components/Login'
 import ComplaintForm from './components/ComplaintForm'
 import Footer from './components/footer'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './components/Contact'
 import AboutUsPage from './components/About'
 
-
+// Make sure you've installed react-router-dom: npm install react-router-dom
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return <div>
-    <Navbar />
-    <HeroSection />
-    <Login />
-    <ComplaintForm />
-    <Contact />
-    <AboutUsPage />
-    <Footer /> 
-  
-  </div>
-
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/complaint" element={<ComplaintForm />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUsPage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
