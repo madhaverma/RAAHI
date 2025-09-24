@@ -1,0 +1,56 @@
+/* SimpleFooter.css */
+
+.simple-footer-container {
+  background-color: #1a202c; /* Dark background */
+  color: #a0aec0; /* Light gray text */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between; /* Space between copyright and social links */
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  width: 100%; /* Ensure it spans full width */
+  margin-top: auto; /* Pushes footer to the bottom if content is short */
+}
+
+.copyright-text {
+  margin: 0;
+  white-space: nowrap; /* Prevents line breaks on the copyright text */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Space between social icons */
+  margin-top: 0; /* Reset margin for larger screens */
+}
+
+.social-link {
+  color: #a0aec0; /* Icon color */
+  font-size: 20px; /* Icon size */
+  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-link:hover {
+  color: #ffffff; /* White on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .simple-footer-container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .copyright-text {
+    margin-bottom: 15px; /* Add space between copyright and icons */
+  }
+
+  .social-links {
+    margin-top: 15px; /* Add space if wrapping */
+    justify-content: center; /* Center social icons when stacked */
+  }
+}
