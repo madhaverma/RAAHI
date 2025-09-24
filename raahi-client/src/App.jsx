@@ -4,6 +4,7 @@ import Login from './components/Login'
 import ComplaintForm from './components/ComplaintForm'
 import Footer from './components/footer'
 import Contact from './components/Contact'
+import Map from './components/Map'
 import AboutUsPage from './components/About'
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/complaint" element={<ComplaintForm />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/map" element={<Map />} />
       </Routes>
       <Footer />
     </BrowserRouter>
