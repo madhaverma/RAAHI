@@ -73,15 +73,17 @@ background-image: url('./assets/my-background.png');
   letter-spacing: 1px;
 }
 
-/* Primary "Raise an Issue" button */
-.btn-primary {
-  background-color: #34d399; /* A vibrant green */
+/* Primary "Start Navigation" button */
+.btn-start-navigation {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   color: white;
+  border: none;
+  border-radius: 25px;
 }
 
-.btn-primary:hover {
-  background-color: #2cb782;
-  transform: translateY(-2px);
+.btn-start-navigation:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Secondary "Login / Sign Up" button */

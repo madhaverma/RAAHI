@@ -35,7 +35,7 @@ export default function Navbar() {
               <img
                 alt="RAAHI"
                 src={RaahiLogo}
-                className="h-8 w-auto"
+                className="h-12 w-auto transition-transform duration-300 ease-in-out hover:scale-105 drop-shadow-lg"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
